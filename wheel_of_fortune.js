@@ -8,7 +8,7 @@
 
 // Set a secret word!
 
-var word = 'ANSWER'; // ALL CAPS
+var word = 'SMILE'; // ALL CAPS
 
 // Ask player if they would like to guess a letter or guess the
 // solution.
@@ -18,28 +18,42 @@ var isGuessingLetter = true; // set to false to guess solution
 // If they are guessing a letter, set the letter that they are
 // guessing.
 
-var letter = 'A'; // UPPERCASE
+var letter = 'E'; // UPPERCASE
 
 // SCRIPT ////////////////////////////////////////////////////////////
 
 // If guessing a letter...
+if (isGuessingLetter == true) {
 
 	// If the word contains the letter...
-
+  if (letter == "S"){
+    console.log("S____");
+  } else if (letter == "M") {
+      console.log("_M___");
+    } else if (letter == "I") {
+      console.log("__I__");
+    } else if (letter == "L") {
+      console.log("___L_");
+    } else if (letter == "E") {
+      console.log("____E");
+    } else {
+      console.log("Sorry, no " + letter);
+    }
 		// Print back the word with all instances of that letter revealed.
 
 	// If the word does not contain the letter...
+} else {
+  if (word == "SMILE") {
+    console.log("Congratulations! You won Wheel Of Fortune!");
+  } else {
+    console.log("Nope, keep trying!");
+  }
 
-		// Print back "Sorry, no <letter>!" but with <letter> replaced by the player's guess.
+}
 
 // If guessing the word...
 
 	// If they are correct...
 
-		// Print "Congratulations! You won Wheel Of Fortune!"
-
-	// If they are incorrect...
-
-		// Print back "Nope, keep trying!"
 
 // End of script!
